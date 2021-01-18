@@ -96,7 +96,7 @@ dependencies {
                                   // failure.
     boolean setReverb(int preset) // Set Reverb effect preset for EAS
                                   // synthesizer (value from
-                                  // [ReverbConstants](library/src/main/java/org/billthefarmer/mididriver/ReverbConstants.java)). Returns true
+                                  // ReverbConstants). Returns true
                                   // on success, false on failure.
 
     boolean shutdown() // Shut down the synthesizer. Returns true on
