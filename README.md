@@ -94,6 +94,10 @@ dependencies {
                                   // synthesizer (between 0 and 100).
                                   // Returns true on success, false on
                                   // failure.
+    boolean setReverb(int preset) // Set Reverb effect preset for EAS
+                                  // synthesizer (value from
+                                  // [ReverbConstants](library/src/main/java/org/billthefarmer/mididriver/ReverbConstants.java)). Returns true
+                                  // on success, false on failure.
 
     boolean shutdown() // Shut down the synthesizer. Returns true on
                        // success, false on failure.
@@ -115,6 +119,16 @@ dependencies {
                                   // synthesizer (between 0 and 100).
                                   // Returns true on success, false on
                                   // failure.
+    jboolean midi_setReverb(jint preset)
+                                  // Set Reverb effect preset for EAS
+                                  // synthesizer. Preset could be:
+                                  //   -1: turn reverb off
+                                  //    0: large hall 
+                                  //    1: hall
+                                  //    2: chamber
+                                  //    3: room.
+                                  // Returns true on success, false on
+                                  // failure.                                  
     jboolean midi_shutdown() // Shut down the synthesizer. Returns true on
                              // success, false on failure.
 ```
